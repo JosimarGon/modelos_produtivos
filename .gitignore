@@ -1,0 +1,10 @@
+
+# files
+
+dockerfile
+api.config
+
+# dir
+
+__pycache__
+ipynb_checkpoints
