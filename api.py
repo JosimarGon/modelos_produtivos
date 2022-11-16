@@ -38,7 +38,7 @@ def get_experiment():
 
 @app.post('/model')
 def predict(wines: wines):
-    mlflow.set_tracking_uri(uri='http://0.0.0.5000/')
+    mlflow.set_tracking_uri(uri='http://http://0.0.0.0:5000/')
     PATH = 'models:/wine_quality/Production'
     classes = ['Bad wine', 'Good wine']
     loaded_model = mlflow.sklearn.load_model(PATH)
