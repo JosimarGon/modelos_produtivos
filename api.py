@@ -24,6 +24,8 @@ class wines(BaseModel):
     
 app = FastAPI()
 
+handler = Mangum(app)
+
 
 @app.get('/experiments')
 def get_experiment():
